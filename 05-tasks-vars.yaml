@@ -16,5 +16,5 @@
         msg: "I am Learning {{COURSE}} and Duration is : {{DURATION}} and the Trainer is : {{TRAINER}}"
     
     - name: print the information again and again
-     ansible.builtin.debug:
+      ansible.builtin.debug:
       msg: "I am Learning {{COURSE}} and Duration is : {{DURATION}} and the Trainer is : {{TRAINER}}"
