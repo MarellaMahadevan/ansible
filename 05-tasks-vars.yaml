@@ -4,7 +4,7 @@
     COURSE: "Devops with AWS"
     DURATION: "120 HR"
     TRAINER: "Siva Kumar Reddy M"
-  tasks: task with vars
+  tasks:
     - name: print the information
       ansible.builtin.debug:
         msg: "I am Learning {{COURSE}} and Duration is : {{DURATION}} and the Trainer is : {{TRAINER}}"
@@ -14,7 +14,7 @@
         COURSE: "Ansible"
       ansible.builtin.debug:
         msg: "I am Learning {{COURSE}} and Duration is : {{DURATION}} and the Trainer is : {{TRAINER}}"
-    
+
     - name: print the information again and again
       ansible.builtin.debug:
       msg: "I am Learning {{COURSE}} and Duration is : {{DURATION}} and the Trainer is : {{TRAINER}}"
