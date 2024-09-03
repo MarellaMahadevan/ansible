@@ -1,7 +1,12 @@
 - name: variables from files
   hosts: web
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
+  vars:
+    COURSE: "DevOps With AWS now Ansible"
+    DURATION: "120 HR"
+    TRAINER: "Siva Kumar Reddy M"
+
   tasks:
     - name: print the information
       ansible.builtin.package:
