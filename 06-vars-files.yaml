@@ -1,6 +1,7 @@
 - name: variables from files
   hosts: web
+  vars-files: vars.yaml
   tasks:
-  -name: print the information
-   ansible.builtin.package:
-    msg: "I am Learning {{COURSE}} and Duration is : {{DURTATION}} and the  Trainer is :{{TRAINER}} "
+    - name: print the information
+      ansible.builtin.package:
+        msg: "I am Learning {{COURSE}} and Duration is : {{DURTATION}} and the  Trainer is :{{TRAINER}} "
