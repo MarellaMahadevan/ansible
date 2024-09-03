@@ -3,10 +3,13 @@
   vars_prompt:
     - name: COURSE
       prompt: Please Enter Course Name
+      private: yes #Not Confidential
     - name: DURATION
       prompt: Please Enter Duration
+      private: yes
     - name: TRAINER
       prompt: Please Enter Trainer Name
+      private: yes
   tasks:
     - name: variable from command prompt
       ansible.builtin.debug:
