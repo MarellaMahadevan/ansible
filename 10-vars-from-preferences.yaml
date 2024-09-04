@@ -1,7 +1,7 @@
 - name: variables from preferences
   hosts: web
-  vars:
-    COURSE: "Devops with AWS from PLAY"
+  # vars:
+  #   COURSE: "Devops with AWS from PLAY"
   # vars_files:
   #   - vars.yaml
   # vars_prompt:
@@ -18,3 +18,5 @@
 #2.Task level
 #3.From Files
 #4.From Prompt
+#5.From Play
+#6.
