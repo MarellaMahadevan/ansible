@@ -1,0 +1,16 @@
+- name: variables from preferences
+  hosts: web
+  vars:
+    COURSE: "Devops with AWS from PLAY"
+  vars_files:
+    - vars.yaml
+  vars_prompt:
+    - name: COURSE
+      prompt: Please Enter Course Name
+      private: false
+  tasks:
+    - name: variables from preferencesvars
+      vars:
+        COURSE: "Devops with AWS from TASK"
+      ansible.builtin.debug:
+        msg: "I am Learning {{COURSE}}"
