@@ -10,7 +10,9 @@
       private: false
   tasks:
     - name: variables from preferencesvars
-      vars:
-        COURSE: "Devops with AWS from TASK"
+      # vars:
+      #   COURSE: "Devops with AWS from TASK"
       ansible.builtin.debug:
         msg: "I am Learning {{COURSE}}"
+#1.command line/args
+#2.Task level
