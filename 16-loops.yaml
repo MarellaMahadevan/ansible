@@ -1,11 +1,11 @@
-- name: loops
+- name: print the names
   hosts: web
   tasks:
     - name: print names
-      anisble.builtin.debug:
+      ansible.builtin.debug:
         msg: "Hello {{item}}"
       loop:
-        - Ramesh
         - Suresh
         - Mahesh
+        - Ramesh
         - Sakalesh
