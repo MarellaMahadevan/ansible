@@ -1,0 +1,13 @@
+- name: loops the packages
+  hosts: web
+  become: yes
+  tasks:
+    - name: print the packages
+      anisble.builtin.package:
+        name: { { item } }
+        state: present
+      loop:
+        - { name: mysql, state: present }
+        - { name: nginx, state: absent }
+        - { name: postfix, state: present }
+        - { name: httpd, state: absent }
