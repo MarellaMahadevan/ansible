@@ -4,9 +4,9 @@
   tasks:
     # - name: execute the command # just issue the command
     #   ansible.builtin.command: ls -ltr > /tmp/output.txt
-    - name: execute the shell #login to the server and execute the command
-      ansible.builtin.shell: ls -ltr > /tmp/output.txt
-    - name: execute process using command
-      ansible.builtin.command: ps -ef | grep ssh
+    # - name: execute the shell #login to the server and execute the command
+    #   ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    # - name: execute process using command
+    #   ansible.builtin.command: ps -ef | grep ssh
     - name: execute the procee using shell
       ansible.builtin.shell: ps -ef | grep ssh
