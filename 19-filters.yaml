@@ -42,8 +42,8 @@
     - name: convert to Items to Map
       vars:
         course:
-          -  { "key": "name", "value": "Devops With AWS" },
-          -  { "key": "Duration", "value": "120 HR" },
-          -  { "key": "trainer", "value": "siva kumar reddy m" }
+          - { "key": "name", "value": "Devops With AWS" }
+          - { "key": "Duration", "value": "120 HR" }
+          - { "key": "trainer", "value": "siva kumar reddy m" }
       anisble.builtin.debug:
         msg: "{{course | items2dict}}"
