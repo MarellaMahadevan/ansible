@@ -34,6 +34,7 @@
         wait: true
         overwrite: true
       loop: "{{ec2_instances.results}}"
+
     - name: create route 53
       amazon.aws.route53:
         state: present
